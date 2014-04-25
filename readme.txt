@@ -1,10 +1,10 @@
 === WP Stripe ===
-Contributors: Noel_Tock
+Contributors: humanmade, Noel_Tock, willmot
 Donate link: http://www.noeltock.com
 Tags: stripe, paypal, payment, pay, transfer, charge, widget, form, chargly, recurly, gravatar, avatar, recent, donation, donations, charity, transaction, money
 Requires at least: 3.1
-Tested up to: 3.4
-Stable tag: 1.4.7
+Tested up to: 3.9
+Stable tag: 1.5
 
 WP Stripe provides a payment form and recent donor widget by utilizing Stripe.com, the awesome alternative to PayPal.
 
@@ -33,11 +33,11 @@ In order to process transactions in a secure manner, you need to [purchase an SS
 
 = Stripe Limitations =
 
-Stripe is currently only available to users accepting payments in the US (i.e. in order to receive money, you must reside in the US), however the payee or cardholder can be anywhere in the world.
+Stripe is available in a number of countries, [check here](https://stripe.com/global) to see if your country is supported.
 
 = Updates =
 
-Follow me for updates at [@noeltock](http://www.twitter.com/noeltock)
+Follow us for updates at [@humanmadeltd](http://www.twitter.com/humanmadeltd)
 
 == Installation ==
 
@@ -73,12 +73,12 @@ WP Stripe is not intended to be used as an e-commerce solution, but rather to ha
 
 Actions
 
-* ´wp_stripe_post_successful_charge´ (after a successful charge and saving to WP)
-* ´wp_stripe_post_fail_charge´ (after a failed charge, for whatever reason)
+* `wp_stripe_post_successful_charge` (after a successful charge and saving to WP)
+* `wp_stripe_post_fail_charge` (after a failed charge, for whatever reason)
 
 Filter
 
-* ´wp_stripe_filter_form´(to filter/edit the content of the form)
+* `wp_stripe_filter_form`(to filter/edit the content of the form)
 
 == Screenshots ==
 
@@ -87,6 +87,17 @@ Filter
 3. Recent Payments Widget (largely unstyled, shows recent donations of users who opted-in)
 
 == Changelog ==
+
+= 1.5 =
+
+* Tested for latest version of WordPress (3.9)
+* Tested for latest version of Stripe 
+* Various security fixes/enhancements
+* Enchanced submit button with progress state
+* Fixed Close button
+* Fixed UI bugs within WP-Admin
+* Update to latest version of Stripe PHP library
+* Updated ReadMe
 
 = 1.4.7 =
 
@@ -177,6 +188,10 @@ Filter
 * Added Stripe Transaction Overview in WP-Admin
 
 == Upgrade Notice ==
+
+= 1.5 =
+
+* Big update, security enhancements, bug fixes and more
 
 = 1.4.6 =
 
