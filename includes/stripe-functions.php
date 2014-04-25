@@ -124,11 +124,8 @@ function wp_stripe_charge_initiate() {
 		// Create Charge
 		try {
 
-<<<<<<< HEAD
-            $result =  '<div class="wp-stripe-notification wp-stripe-success"> ' . __('Thank You! ', 'wp-stripe') . '<span class="wp-stripe-currency">' . $currency . '</span> ' . $amount . ' has been donated !</div>';
-=======
+			$result =  '<div class="wp-stripe-notification wp-stripe-success"> ' . __('Success, you just transferred ', 'wp-stripe') . '<span class="wp-stripe-currency">' . $currency . '</span> ' . $amount . ' !</div>';
 			$response = wp_stripe_charge( $amount, $card, $name, $stripe_comment );
->>>>>>> 5c5a3b11a5dac161abbbc7d55dbbc231a2d0911d
 
 			$id       = $response->id;
 			$amount   = $response->amount / 100;
